@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a Melhor Maquininha de Cartão? Compare 5 Marcas [2025]</title>
+    <meta name="description" content="Compare taxas de débito, crédito, Pix e Nota RA das 5 principais maquininhas do Brasil em 2025: Ton, InfinitePay, SumUp, PagSeguro e Mercado Pago.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- 
+      CSS e JS estão incorporados neste arquivo para compatibilidade.
+    -->
+    <style>
+        /* --- /assets/css/style.css --- */
+        
+        /* 1. Reset e Variáveis Globais */
+        :root {
+            --primary-color: #1E40AF; /* Azul Escuro */
+            --primary-light: #3B82F6; /* Azul Médio */
+            --success-color: #10B981; /* Verde */
+            --success-dark: #059669;
+            --white-color: #FFFFFF;
+            --background-color: #F9FAFB; /* Cinza Muito Claro */
+            --border-color: #E5E7EB; /* Cinza Claro */
+            --text-color: #1F2937; /* Cinza Escuro */
+            --text-light: #6B7280; /* Cinza Médio */
+            
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --radius-sm: 0.25rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* 2. Utilitários e Componentes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        .btn-primary:hover {
+            background-color: #1D4ED8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+            color: var(--white-color);
+            box-shadow: var(--shadow-md);
+        }
+        .btn-success:hover {
+            background-color: var(--success-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        .btn-success-outline {
+            background-color: var(--white-color);
+            color: var(--success-dark);
+            border: 2px solid var(--success-color);
+        }
+        .btn-success-outline:hover {
+            background-color: #F0FDF4;
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        .card {
+            background-color: var(--white-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            padding: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .badge-green {
+            background-color: #D1FAE5;
+            color: #065F46;
+        }
+        .badge-blue {
+            background-color: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .page {
+            display: none; /* Controlado por JS */
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.3;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); }
+        a { color: var(--primary-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .ra-score {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        /* Badge de Desconto */
+        .discount-badge {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--success-dark);
+            background-color: #D1FAE5;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-sm);
+            display: inline-block;
+            margin-top: 0.75rem;
+        }
+        .discount-badge:empty {
+            display: none; /* Oculta se não houver texto */
+        }
+
+        /* Esconde elementos para impressão */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .printable-area {
+                box-shadow: none;
+                border: none;
+            }
+            body {
+                background-color: var(--white-color);
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+        
+        /* 3. Header e Footer */
+        .main-header {
+            background-color: var(--white-color);
+            box-shadow: var(--shadow-sm);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .logo svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .main-nav a {
+            font-weight: 600;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .main-nav a.active::after,
+        .main-nav a:not(.active):hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .main-nav a:not(.active):hover::after {
+            background-color: var(--border-color);
+        }
+
+        #mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #mobile-menu-toggle svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .main-footer {
+            background-color: var(--text-color);
+            color: #D1D5DB;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-content h4 {
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-content ul {
+            list-style: none;
+        }
+        .footer-content li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-content a {
+            color: #D1D5DB;
+            text-decoration: none;
+        }
+        .footer-content a:hover {
+            color: var(--white-color);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--text-light);
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        .footer-ra-seal {
+            max-width: 120px;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+
+        /* 4. Page: Home */
+        #page-home .hero {
+            background-color: var(--white-color);
+            padding: 5rem 0;
+            text-align: center;
+        }
+        #page-home .hero h1 {
+            font-size: 3rem;
+            max-width: 800px;
+            margin: 0 auto 1rem auto;
+        }
+        #page-home .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+        }
+
+        #page-home .quick-compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            box-shadow: var(--shadow-lg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background-color: var(--white-color);
+        }
+        
+        #page-home .quick-compare-table th, 
+        #page-home .quick-compare-table td {
+            padding: 1.25rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        #page-home .quick-compare-table th {
+            background-color: #F9FAFB;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-light);
+        }
+        
+        #page-home .quick-compare-table td {
+            font-weight: 500;
+            vertical-align: middle;
+        }
+        
+        #page-home .quick-compare-table .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        #page-home .quick-compare-table .brand-logo img,
+        #page-home .quick-compare-table .brand-logo svg {
+            height: 24px;
+            max-width: 100px;
+        }
+        
+        #page-home .quick-compare-table .rate-highlight {
+            font-weight: 700;
+            color: var(--success-dark);
+        }
+        
+        #page-home .quick-compare-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        #page-home .quick-compare-table .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background-color: var(--white-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .feature-card .icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: #DBEAFE;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem auto;
+        }
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* 5. Page: Comparar */
+        .comparador-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+        
+        #page-comparar-filters {
+            background-color: var(--white-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            padding: 1.5rem;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .filter-group {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+        .filter-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .filter-group h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .filter-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+        
+        .filter-group input[type="range"] {
+            width: 100%;
+        }
+        .filter-group .range-value {
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .filter-group input[type="radio"],
+        .filter-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        
+        .filter-group .radio-label,
+        .filter-group .checkbox-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            color: var(--text-light);
+            cursor: pointer;
+        }
+
+        #filter-toggle {
+            display: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .comparador-table-wrapper {
+            overflow-x: auto;
+        }
+        
+        .comparador-table {
+            width: 100%;
+            min-width: 1200px; 
+            border-collapse: collapse;
+            background-color: var(--white-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+        
+        .comparador-table th,
+        .comparador-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+            font-size: 0.875rem;
+        }
+        
+        .comparador-table th {
+            background-color: #F9FAFB;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+        }
+        
+        .comparador-table .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .comparador-table .brand-logo img,
+        .comparador-table .brand-logo svg {
+            height: 24px;
+            max-width: 100px;
+        }
+        
+        .comparador-table .rate-best {
+            font-weight: 700;
+            color: var(--success-dark);
+        }
+        
+        .comparador-table .check-icon,
+        .comparador-table .x-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: auto;
+        }
+        
+        .comparador-table .check-icon { color: var(--success-color); }
+        .comparador-table .x-icon { color: #EF4444; }
+        
+        .comparador-table .ra-score {
+            text-align: center;
+        }
+
+        #comparador-results-count {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        /* 6. Page: Quiz */
+        .quiz-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: var(--white-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem;
+        }
+
+        .quiz-progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: var(--border-color);
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        #quiz-progress {
+            width: 0%;
+            height: 100%;
+            background-color: var(--success-color);
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .quiz-step {
+            display: none;
+        }
+        .quiz-step.active {
+            display: block;
+        }
+        
+        .quiz-step h2 {
+            font-size: 1.75rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .quiz-options {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 1.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-align: left;
+            background-color: var(--white-color);
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        .quiz-option:hover {
+            border-color: var(--primary-light);
+            background-color: #EFF6FF;
+        }
+        
+        .quiz-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        #quiz-result-container {
+            text-align: center;
+        }
+        #quiz-result-container .result-card {
+            border: 3px solid var(--success-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        #quiz-result-container .result-card .brand-logo {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+        #quiz-result-container h3 {
+            font-size: 1.75rem;
+            color: var(--success-dark);
+        }
+        #quiz-result-container .result-reason {
+            font-size: 1.125rem;
+            margin: 1.5rem 0;
+            color: var(--text-color);
+        }
+        
+        #quiz-alternatives .alternative-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            text-align: left;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+        }
+        #quiz-alternatives .brand-logo {
+            height: 30px;
+            flex-shrink: 0;
+        }
+        
+        /* 7. Page: Review (Individual) */
+        .review-header {
+            background-color: var(--white-color);
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .review-header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #review-logo {
+            max-height: 60px;
+            max-width: 250px;
+        }
+        #review-slogan {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .review-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+        
+        .review-main {
+            background-color: var(--white-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            padding: 2rem;
+        }
+
+        .review-sidebar .card {
+            position: sticky;
+            top: 100px;
+        }
+        
+        #review-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: var(--radius-md);
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            background-color: #fff;
+        }
+        
+        .rate-simulator {
+            background-color: #F9FAFB;
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+        }
+        .rate-simulator h4 {
+            font-size: 1.125rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .simulator-input-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .simulator-input-group span {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        #simulator-amount {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        
+        .simulator-result-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            text-align: left;
+        }
+        .simulator-result-item {
+            background-color: var(--white-color);
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+        .simulator-result-item p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+        .simulator-result-item p span {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .simulator-result-item strong {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--success-dark);
+        }
+
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .pros-cons-grid h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .pros-cons-list {
+            list-style: none;
+        }
+        .pros-cons-list li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .pros-cons-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+        }
+        .pros-list li::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2310B981'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+        }
+        .cons-list li::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23EF4444'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 1.5rem 0;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            transition: transform 0.2s;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .faq-answer p {
+            padding-bottom: 1.5rem;
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white-color);
+            padding: 1.5rem;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            z-index: 50;
+        }
+        
+        /* 8. Page: Blog */
+        .blog-post-header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: var(--white-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .blog-post-header h1 {
+            font-size: 2.75rem;
+            max-width: 900px;
+            margin: 0 auto 1rem auto;
+        }
+        .blog-post-header .post-meta {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .blog-post-content {
+            max-width: 800px;
+            margin: 2.5rem auto;
+            background-color: var(--white-color);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .blog-post-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+        }
+        
+        .blog-post-content ul, .blog-post-content ol {
+            margin: 1rem 0 1rem 1.5rem;
+        }
+        
+        .blog-post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            margin: 1.5rem 0;
+            loading: "lazy";
+        }
+        
+        .blog-cta {
+            background-color: #EFF6FF;
+            border: 2px solid var(--primary-light);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+        .blog-cta h3 {
+            font-size: 1.5rem;
+        }
+
+        /* 9. Popups e Flutuantes */
+        
+        .exit-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 200;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .exit-popup {
+            background-color: var(--white-color);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            animation: zoomIn 0.3s;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .exit-popup-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            cursor: pointer;
+        }
+
+        /* 10. Responsividade (Mobile-first) */
+        
+        /* Tablet */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.25rem; }
+            h2 { font-size: 1.75rem; }
+            #page-home .hero h1 { font-size: 2.5rem; }
+
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 69px; /* Altura do header */
+                left: 0;
+                width: 100%;
+                background-color: var(--white-color);
+                box-shadow: var(--shadow-md);
+            }
+            .main-nav.active {
+                display: block;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            .main-nav a {
+                display: block;
+                padding: 1rem 1.5rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .main-nav a.active::after, .main-nav a:hover::after {
+                display: none;
+            }
+            .main-nav a.active {
+                background-color: #F9FAFB;
+                color: var(--primary-color);
+            }
+            
+            #mobile-menu-toggle {
+                display: block;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparador-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            #page-comparar-filters {
+                position: static;
+                display: none;
+            }
+            #page-comparar-filters.active {
+                display: block;
+            }
+            #filter-toggle {
+                display: block;
+            }
+
+            .review-layout {
+                grid-template-columns: 1fr;
+            }
+            .review-sidebar .card {
+                position: static;
+                margin-top: 2rem;
+            }
+            .review-header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sticky-cta {
+                padding: 1rem;
+            }
+            .sticky-cta .btn {
+                width: 100%;
+            }
+            
+            .footer-content {
+                text-align: center;
+            }
+        }
+        
+        /* Mobile Pequeno */
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 1rem;
+            }
+            #page-home .hero {
+                padding: 3rem 0;
+            }
+            #page-home .hero h1 {
+                font-size: 2rem;
+            }
+            #page-home .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .section {
+                padding: 2.5rem 0;
+            }
+            
+            /* Tabela home responsiva */
+            #page-home .quick-compare-table {
+                box-shadow: none;
+            }
+            #page-home .quick-compare-table thead {
+                display: none;
+            }
+            #page-home .quick-compare-table tr {
+                display: block;
+                margin-bottom: 1.5rem;
+                background: var(--white-color);
+                box-shadow: var(--shadow-md);
+                border-radius: var(--radius-md);
+            }
+            #page-home .quick-compare-table td {
+                display: block;
+                text-align: right;
+                border-bottom: 1px dotted var(--border-color);
+                position: relative;
+                padding-left: 50%;
+            }
+            #page-home .quick-compare-table td:last-child {
+                border-bottom: none;
+            }
+            #page-home .quick-compare-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                font-weight: 600;
+                color: var(--text-color);
+                text-align: left;
+            }
+            #page-home .quick-compare-table .brand-logo {
+                justify-content: flex-end;
+            }
+            
+            .quiz-container {
+                padding: 1.5rem;
+            }
+            .quiz-step h2 {
+                font-size: 1.5rem;
+            }
+            .quiz-option {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            
+            .blog-post-content {
+                padding: 1.5rem;
+            }
+            .blog-post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .exit-popup {
+                width: 90%;
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header no-print">
+        <div class="container">
+            <a href="#page-home" class="logo router-link">
+                <!-- Ícone SVG inline -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h6m-6 2.25h6M12 9.75l.75-1.5.75 1.5m-1.5 0h1.5m6 2.25h-4.5m4.5 2.25h-4.5m4.5 2.25h-4.5M16.5 9.75l.75-1.5.75 1.5m-1.5 0h1.5" />
+                </svg>
+                <span>ComparaMaq</span>
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#page-home" class="router-link active">Início</a></li>
+                    <li><a href="#page-comparar" class="router-link">Comparador</a></li>
+                    <li><a href="#page-quiz" class="router-link">Quiz Rápido</a></li>
+                    <li><a href="#page-blog/menor-taxa" class="router-link">Blog</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle" aria-label="Abrir menu">
+                <!-- Ícone Hambúrguer SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Conteúdo da Página (SPA) -->
+
+    <!-- 1. Página: Home -->
+    <main id="page-home" class="page">
+        <section class="hero">
+            <div class="container">
+                <h1>Qual a melhor maquininha de cartão para você em 2025?</h1>
+                <p>Compare taxas, prazos e benefícios das 5 principais marcas do Brasil.</p>
+                <a href="#page-quiz" class="btn btn-success btn-lg router-link">
+                    <!-- Ícone SVG inline -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width: 1.25rem; height: 1.25rem; vertical-align: middle; margin-right: 0.5rem;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 13.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 18l-1.035.259a3.375 3.375 0 00-2.456 2.456L18 21.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 18l1.035-.259a3.375 3.375 0 002.456-2.456L18 13.25z" />
+                    </svg>
+                    Fazer Quiz Rápido
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">Comparativo Rápido das Principais Marcas</h2>
+                <div class="comparador-table-wrapper">
+                    <!-- Tabela Home com Nota RA -->
+                    <table class="quick-compare-table" id="home-compare-table">
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Taxa Débito</th>
+                                <th>Taxa Pix</th>
+                                <th>Crédito 1x</th>
+                                <th>Nota RA</th>
+                                <th>Ver Análise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Conteúdo gerado por JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--white-color);">
+            <div class="container">
+                <h2 style="text-align: center;">Encontre a maquininha ideal para seu perfil</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">🛍️</div>
+                        <h3>Melhor para MEI</h3>
+                        <p>Taxas baixas para quem vende pouco e precisa economizar.</p>
+                        <a href="#page-blog/para-mei" class="router-link">Ver recomendadas &raquo;</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🛵</div>
+                        <h3>Melhor para Delivery</h3>
+                        <p>Maquininha com chip, bateria de longa duração e link de pagamento.</p>
+                        <a href="#page-comparar" class="router-link">Filtrar opções &raquo;</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📱</div>
+                        <h3>Tap on Celular</h3>
+                        <p>Receba pagamentos por aproximação direto no seu celular.</p>
+                        <a href="#page-comparar" class="router-link">Ver opções &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 2. Página: Comparador -->
+    <main id="page-comparar" class="page section">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;" class="no-print">
+                <h1>Comparador Detalhado</h1>
+                <button class="btn btn-primary" onclick="window.print()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 1rem; height: 1rem; vertical-align: middle; margin-right: 0.5rem;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6 13.829m0 0l.07 1.528m.65-1.618a42.5 42.5 0 0010.56 0m-10.56 0L6 13.829m0 0l.65 1.618m10.56-1.618a42.5 42.5 0 01.65 1.618m-11.86-1.618L6 13.829m.65 1.618L6 13.829m0 0l.07 1.528m5.21-6.844a2.25 2.25 0 012.12 0l2.12 1.268a2.25 2.25 0 002.12 0l2.12-1.268a2.25 2.25 0 00-2.12-3.791V5.25a2.25 2.25 0 00-2.25-2.25H10.5a2.25 2.25 0 00-2.25 2.25v.604a2.25 2.25 0 00-2.12 3.79l2.12 1.269a2.25 2.25 0 012.12 0l2.12-1.269z" />
+                    </svg>
+                    Imprimir / Salvar PDF
+                </button>
+            </div>
+
+            <button class="btn btn-primary-outline btn-full no-print" id="filter-toggle" style="border-width: 2px;">
+                Mostrar/Esconder Filtros
+            </button>
+            
+            <div class="comparador-layout">
+                <!-- Filtros com Tap On -->
+                <aside id="page-comparar-filters" class="no-print">
+                    <form id="filters-form">
+                        <div class="filter-group">
+                            <h4>Faturamento Mensal</h4>
+                            <label for="filter-faturamento">Até R$ <span id="filter-faturamento-value">5000</span></label>
+                            <input type="range" id="filter-faturamento" min="1000" max="50000" step="1000" value="5000">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Prioridade</h4>
+                            <label class="radio-label">
+                                <input type="radio" name="prioridade" value="taxa" checked> Menor Taxa
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="prioridade" value="prazo"> Recebimento Rápido
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="prioridade" value="custo"> Menor Custo Inicial
+                            </label>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Conectividade</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="conectividade" value="wifi"> Wi-Fi
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="conectividade" value="chip"> Chip (Plano Grátis)
+                            </label>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Funcionalidades</h4>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="impressao"> Imprime Recibo
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="vale"> Aceita Vale-Refeição
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="funcionalidades" value="tapon"> Tap on Celular (App)
+                            </label>
+                        </div>
+                        
+                        <button type="reset" class="btn btn-full" style="background-color: var(--border-color); color: var(--text-light);">Limpar Filtros</button>
+                    </form>
+                </aside>
+
+                <div class="comparador-main">
+                    <p id="comparador-results-count" class="no-print">Mostrando 5 resultados.</p>
+                    <div class="comparador-table-wrapper printable-area">
+                        <!-- Tabela Comparador com Tap On -->
+                        <table class="comparador-table">
+                            <thead>
+                                <tr>
+                                    <th>Marca</th>
+                                    <th>Modelos</th>
+                                    <th>Débito</th>
+                                    <th>Taxa Pix</th>
+                                    <th>Crédito 1x</th>
+                                    <th>Crédito 12x</th>
+                                    <th>Recebimento</th>
+                                    <th>Conexão</th>
+                                    <th>Imprime</th>
+                                    <th>Tap on Celular</th>
+                                    <th>Nota RA</th>
+                                    <th class="no-print">Oferta</th>
+                                </tr>
+                            </thead>
+                            <tbody id="comparador-table-body">
+                                <!-- Conteúdo gerado por JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 3. Página: Quiz -->
+    <main id="page-quiz" class="page section">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-progress-bar no-print">
+                    <div id="quiz-progress"></div>
+                </div>
+                
+                <div id="quiz-steps-container">
+                    <!-- Steps gerados por JS -->
+                </div>
+                
+                <div id="quiz-result-container" style="display: none;">
+                    <!-- Resultado gerado por JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 4. Página: Review (Template) -->
+    <main id="page-review" class="page">
+        <header class="review-header">
+            <div class="container review-header-content">
+                <div>
+                    <img src="" alt="" id="review-logo">
+                    <p id="review-slogan"></p>
+                </div>
+                <!-- CTA do Header com badge de desconto -->
+                <div style="text-align: center;">
+                    <a href="#" id="review-cta-header" class="btn btn-success btn-lg no-print" target="_blank">Pedir Agora</a>
+                    <p id="review-cta-header-discount" class="discount-badge"></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container review-layout">
+            <div class="review-main">
+                <section>
+                    <h3 id="review-ideal-title">Para quem é ideal?</h3>
+                    <ul id="review-ideal-list" class="pros-cons-list pros-list">
+                        <!-- Gerado por JS -->
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="pros-cons-grid">
+                        <div>
+                            <h4>Prós</h4>
+                            <ul id="review-pros-list" class="pros-cons-list pros-list">
+                                <!-- Gerado por JS -->
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Contras</h4>
+                            <ul id="review-cons-list" class="pros-cons-list cons-list">
+                                <!-- Gerado por JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>Perguntas Frequentes (FAQ)</h3>
+                    <div class="faq-accordion" id="review-faq-accordion">
+                        <!-- Gerado por JS -->
+                    </div>
+                </section>
+            </div>
+
+            <aside class="review-sidebar no-print">
+                <div class="card">
+                    <!-- Imagem da Maquininha -->
+                    <img id="review-image" src="" alt="Imagem da maquininha" loading="lazy">
+
+                    <div class="rate-simulator">
+                        <h4>Simule quanto você recebe</h4>
+                        <div class="simulator-input-group">
+                            <span>R$</span>
+                            <input type="text" id="simulator-amount" value="100,00">
+                        </div>
+                        <div class="simulator-result-grid">
+                            <div class="simulator-result-item">
+                                <p>No Pix (Taxa <span><span id="sim-pix-rate">0.00</span>%</span>)</p>
+                                <strong id="sim-pix-value">R$ 100,00</strong>
+                            </div>
+                            <div class="simulator-result-item">
+                                <p>No Débito (Taxa <span><span id="sim-debito-rate">0.00</span>%</span>)</p>
+                                <strong id="sim-debito-value">R$ 0,00</strong>
+                            </div>
+                            <div class="simulator-result-item">
+                                <p>No Crédito 1x (Taxa <span><span id="sim-credito-rate">0.00</span>%</span>)</p>
+                                <strong id="sim-credito-value">R$ 0,00</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA da Sidebar com badge de desconto -->
+                    <p id="review-cta-sidebar-discount" class="discount-badge" style="text-align: center; margin-bottom: 0.5rem; display: block;"></p>
+                    <a href="#" id="review-cta-sidebar" class="btn btn-success btn-full" target="_blank">
+                        Visitar Site Oficial
+                    </a>
+                </div>
+            </aside>
+        </div>
+        
+        <!-- CTA Flutuante Fixo (Texto atualizado por JS) -->
+        <div class="sticky-cta no-print">
+            <a href="#" id="review-cta-sticky" class="btn btn-success">
+                <span id="review-sticky-text">Comprar com Desconto</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- 5. Página: Blog (Template) -->
+    <main id="page-blog" class="page">
+        <header class="blog-post-header">
+            <div class="container">
+                <h1 id="blog-title"></h1>
+                <p class="post-meta">
+                    Por <span id="blog-author">Equipe ComparaMaq</span> | 
+                    Atualizado em <span id="blog-date">1 de Novembro, 2025</span>
+                </p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="blog-post-content" id="blog-content">
+                <!-- Conteúdo (HTML) gerado por JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer no-print">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#page-home" class="router-link">Sobre Nós</a></li>
+                        <li><a href="#page-blog/menor-taxa" class="router-link">Blog</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Comparativos</h4>
+                    <ul>
+                        <li><a href="#review/ton" class="router-link">Análise Ton</a></li>
+                        <li><a href="#review/infinitepay" class="router-link">Análise InfinitePay</a></li>
+                        <li><a href="#review/sumup" class="router-link">Análise SumUp</a></li>
+                        <li><a href="#review/pagseguro" class="router-link">Análise PagSeguro</a></li>
+                        <li><a href="#review/mercadopago" class="router-link">Análise Mercado Pago</a></li>
+                    </ul>
+                </div>
+                <!-- Rodapé com 5 artigos -->
+                <div>
+                    <h4>Artigos Populares</h4>
+                    <ul>
+                        <li><a href="#page-blog/menor-taxa" class="router-link">Menor Taxa 2025</a></li>
+                        <li><a href="#page-blog/para-mei" class="router-link">Melhor para MEI</a></li>
+                        <li><a href="#page-blog/sem-aluguel" class="router-link">Maquininha Sem Aluguel</a></li>
+                        <li><a href="#page-blog/recebimento-rapido" class="router-link">Recebimento Rápido</a></li>
+                        <li><a href="#page-blog/pagseguro-vs-mercadopago" class="router-link">PagSeguro vs Mercado Pago</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://placehold.co/120x60/ffffff/1F2937?text=Selo+RA" alt="Selo Reclame Aqui" class="footer-ra-seal" loading="lazy">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="footer-year">2025</span> ComparaMaq. Todos os direitos reservados.
+                <p style="font-size: 0.8rem; margin-top: 0.5rem;">O ComparaMaq é um site comparativo e pode ser remunerado por parceiros. Isso não afeta nossas análises e comparações.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Popups e Flutuantes -->
+
+    <!-- Exit Intent Popup -->
+    <div class="exit-popup-overlay no-print" id="exit-popup-overlay">
+        <div class="exit-popup">
+            <button class="exit-popup-close" id="exit-popup-close" aria-label="Fechar popup">&times;</button>
+            <h3>Calma, não vá embora!</h3>
+            <p style="font-size: 1.125rem; margin: 1.5rem 0;">Não sabe qual maquininha escolher?</p>
+            <p>Faça nosso quiz de 1 minuto e descubra a maquininha com a <strong>menor taxa</strong> para o seu negócio!</p>
+            <a href="#page-quiz" class="btn btn-success btn-lg router-link" id="exit-popup-cta">Fazer Quiz Agora</a>
+        </div>
+    </div>
+
+
+    <!-- 
+      JavaScript incorporado.
+    -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // --- /assets/data/maquininhas.json ---
+        // **LINKS E DESCONTOS ATUALIZADOS**
+        const MAQUININHAS_DATA = [
+          {
+            "slug": "ton",
+            "nome": "Ton",
+            "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' rx='8' fill='%2300C853'/%3E%3Ctext x='50' y='27' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3ETon%3C/text%3E%3C/svg%3E",
+            "slogan": "A maquininha do pequeno empreendedor.",
+            "imagem": "https://i.supaimg.com/074494bb-cbf3-403f-9d7d-3c2920da0d77.png",
+            "modelos": ["T1", "T2+", "T3", "T3 Smart"],
+            "taxas": { "debito": 1.39, "pix": 0.0, "credito1x": 3.20, "credito12x": 12.99 },
+            "preco": "12x R$2,90",
+            "recebimento": "1 dia útil",
+            "chip": true,
+            "wifi": true,
+            "impressao": true,
+            "vale": false,
+            "tapon": true,
+            "notaRa": 8.7,
+            "faturamentoIdeal": 5000,
+            "link": "https://ton.com.br/checkout/cart/?productId=TONMAXMEI_TIER_SMART_POS&referrer=B54D4547-30DB-48FF-AC8E-6F45BDFC4E15&userAnticipation=0&userTag=tonmaxmei_tier&utm_medium=invite_share&utm_source=revendedor",
+            "desconto": "5% de desconto",
+            "idealPara": ["MEIs e autônomos", "Vendas pontuais", "Quem busca taxa zero no primeiro mês"],
+            "pros": ["Taxa Pix 0%", "Taxas muito baixas no plano UltraTon", "Sem aluguel", "Aceita PF e CNPJ", "Ótima nota no Reclame Aqui"],
+            "cons": ["Taxas mais altas no plano básico", "Máquina T1 depende de celular", "Não aceita vale-refeição", "Demora na reposição da máquina"],
+            "faq": [
+                { "q": "Ton aceita pessoa física?", "a": "Sim, o Ton aceita tanto CPF quanto CNPJ, sendo uma ótima opção para autônomos e MEIs." },
+                { "q": "Qual a taxa do Pix na Ton?", "a": "A taxa para recebimento via QR Code Pix na maquininha é 0%." },
+                { "q": "A Ton tem Tap on Celular?", "a": "Sim, a Ton oferece o TapTon, que permite vender por aproximação usando apenas o celular." }
+            ]
+          },
+          {
+            "slug": "infinitepay",
+            "nome": "InfinitePay",
+            "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' rx='8' fill='%23000000'/%3E%3Ctext x='50' y='27' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3EInfinitePay%3C/text%3E%3C/svg%3E",
+            "slogan": "A maquininha com as menores taxas no crédito.",
+            "imagem": "https://i.supaimg.com/cccd26c2-f475-4fc7-b8d1-15d9d3da476b.png",
+            "modelos": ["Infinite Smart", "InfiniteTap"],
+            "taxas": { "debito": 1.38, "pix": 0.0, "credito1x": 3.16, "credito12x": 12.45 },
+            "preco": "12x R$ 14,90",
+            "recebimento": "1 dia útil",
+            "chip": true,
+            "wifi": true,
+            "impressao": true,
+            "vale": false,
+            "tapon": true,
+            "notaRa": 8.5,
+            "faturamentoIdeal": 15000,
+            "link": "http://buy.infinitepay.io/smart?rid=fabio-olliv",
+            "desconto": "R$15 de desconto",
+            "idealPara": ["Quem vende muito no crédito parcelado", "Lojas com faturamento médio/alto", "Quem precisa de uma máquina smart (Android)"],
+            "pros": ["Taxa Pix 0%", "Melhores taxas no crédito parcelado", "Recebimento em 1 dia útil", "Máquina Smart com sistema Android", "Sem aluguel"],
+            "cons": ["Exige CNPJ (não aceita MEI ou PF)", "Faturamento mínimo para ter as melhores taxas", "Preço da máquina é mais alto", "Não aceita vale-refeição"],
+            "faq": [
+                { "q": "InfinitePay aceita MEI ou CPF?", "a": "Não, a InfinitePay é exclusiva para clientes com CNPJ ativo (exceto MEI)." },
+                { "q": "A InfinitePay tem Tap on Celular?", "a": "Sim, a InfinitePay oferece o InfiniteTap, que transforma seu celular em maquininha." }
+            ]
+          },
+          {
+            "slug": "sumup",
+            "nome": "SumUp",
+            "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' rx='8' fill='%233B82F6'/%3E%3Ctext x='50' y='27' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3ESumUp%3C/text%3E%3C/svg%3E",
+            "slogan": "Soluções simples para pequenos negócios.",
+            "imagem": "https://i.supaimg.com/389818bb-25f9-4595-94e0-39d481f150d2.png",
+            "modelos": ["SumUp Top", "SumUp Solo", "SumUp Total"],
+            "taxas": { "debito": 1.35, "pix": 0.0, "credito1x": 3.10, "credito12x": 12.90 },
+            "preco": "12x R$ 9,90",
+            "recebimento": "1 dia útil",
+            "chip": true,
+            "wifi": true,
+            "impressao": true,
+            "vale": false,
+            "tapon": true,
+            "notaRa": 9.2,
+            "faturamentoIdeal": 8000,
+            "link": "http://r.sumup.com/referrals/vhfji?share_id=c31mxJmhgnl7aa",
+            "desconto": "5% de desconto",
+            "idealPara": ["Autônomos e MEIs", "Quem busca excelente atendimento", "Vendedores que precisam de maquininha com chip e Wi-Fi"],
+            "pros": ["Taxa Pix 0%", "Excelente atendimento (Nota RA 9.2)", "Taxas competitivas", "Aceita PF e CNPJ", "Plano de recebimento em 1 dia útil"],
+            "cons": ["Não aceita vale-refeição", "Modelo 'Top' depende do celular", "Taxas de parcelamento podem ser altas"],
+            "faq": [
+                { "q": "A SumUp tem aluguel?", "a": "Não, nenhuma das maquininhas da SumUp possui taxa de aluguel. Você compra a máquina e ela é sua." },
+                { "q": "A SumUp tem Tap on Celular?", "a": "Sim, a SumUp oferece o 'SumUp Tap', que permite aceitar pagamentos por aproximação no celular." }
+            ]
+          },
+          {
+            "slug": "pagseguro",
+            "nome": "PagSeguro",
+            "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' rx='8' fill='%23F9A825'/%3E%3Ctext x='50' y='27' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='black' text-anchor='middle'%3EPagSeguro%3C/text%3E%3C/svg%3E",
+            "slogan": "A maquininha do PagBank. Várias opções.",
+            "imagem": "https://i.supaimg.com/cf320d60-8fe3-43f4-913b-807ad1018a2a.png",
+            "modelos": ["Minizinha", "Moderninha Plus", "Moderninha Smart"],
+            "taxas": { "debito": 1.99, "pix": 0.0, "credito1x": 4.99, "credito12x": 22.59 },
+            "preco": "12x R$ 1,90",
+            "recebimento": "Na hora",
+            "chip": true,
+            "wifi": true,
+            "impressao": true,
+            "vale": true,
+            "tapon": true,
+            "notaRa": 8.2,
+            "faturamentoIdeal": 10000,
+            "link": "pagbank.vc/indica-maquininhas-9d8da8c4f",
+            "desconto": null,
+            "idealPara": ["Quem precisa de muitas opções de máquinas", "Quem quer receber o dinheiro na hora", "Quem precisa aceitar vale-refeição"],
+            "pros": ["Taxa Pix 0% (via QR Code)", "Recebimento na hora", "Aceita vale-refeição (com CNPJ)", "Grande variedade de máquinas", "Conta digital PagBank integrada"],
+            "cons": ["Taxas para recebimento na hora são as mais altas do mercado", "Planos de taxas podem ser confusos", "Atendimento ao cliente mediano"],
+            "faq": [
+                { "q": "PagSeguro aceita vale-refeição?", "a": "Sim, os modelos Moderninha Smart e Plus 2 aceitam os principais vouchers (VR, VA, Sodexo, Ticket) mas é preciso ter CNPJ no ramo alimentício." },
+                { "q": "O PagSeguro tem Tap on Celular?", "a": "Sim, o PagBank oferece a função 'Tap On', que permite que o celular com Android e NFC receba pagamentos por aproximação." },
+                { "q": "Como abrir a conta PagBank?", "a": "Você pode abrir a conta digital gratuita do PagBank <a href='pagbank.vc/indica-conta-f604d8f2a' target='_blank' rel='noopener'>neste link de indicação</a>. A conta é necessária para receber o dinheiro das vendas." }
+            ]
+          },
+          {
+            "slug": "mercadopago",
+            "nome": "Mercado Pago",
+            "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Crect width='100' height='40' rx='8' fill='%23009EE3'/%3E%3Ctext x='50' y='27' font-family='Arial, sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EMercado Pago%3C/text%3E%3C/svg%3E",
+            "slogan": "A maquininha do Mercado Livre.",
+            "imagem": "https://i.supaimg.com/68c5acc0-25c2-4f71-af14-fed861850be2.png",
+            "modelos": ["Point Mini", "Point Air", "Point Pro 2", "Point Smart"],
+            "taxas": { "debito": 1.99, "pix": 0.0, "credito1x": 4.98, "credito12x": 22.59 },
+            "preco": "12x R$ 2,90",
+            "recebimento": "Na hora",
+            "chip": true,
+            "wifi": true,
+            "impressao": true,
+            "vale": true,
+            "tapon": true,
+            "notaRa": 7.5,
+            "faturamentoIdeal": 10000,
+            "link": "https://mpago.li/1KqYtw2",
+            "desconto": null,
+            "idealPara": ["Vendedores do Mercado Livre", "Quem busca recebimento instantâneo", "Quem precisa de integração com e-commerce"],
+            "pros": ["Taxa Pix 0% (via QR Code)", "Recebimento na hora", "Integrado com a conta Mercado Pago", "Aceita vale-refeição (com CNPJ)", "Máquinas com boa bateria"],
+            "cons": ["Taxas altas para recebimento na hora (iguais ao PagSeguro)", "Nota baixa no Reclame Aqui", "Planos de taxas menos competitivos que Ton/SumUp"],
+            "faq": [
+                { "q": "Preciso ter conta no Mercado Livre?", "a": "Não, mas você precisará criar uma conta no Mercado Pago, que é o banco digital do Mercado Livre, para receber os valores." },
+                { "q": "O Mercado Pago tem Tap on Celular?", "a": "Sim, a função se chama 'Point Tap' e permite cobrar por aproximação direto no celular." }
+            ]
+          }
+        ];
+        
+        // --- /assets/data/blog.js (embutido) ---
+        
+        // Bloco de CTA Padrão para o Quiz
+        const BLOG_CTA_QUIZ = `
+            <div class="blog-cta">
+                <h3>Não tem certeza?</h3>
+                <p>Use nosso quiz rápido e descubra a máquina ideal para o seu perfil exato de vendas!</p>
+                <a href="#page-quiz" class="btn btn-primary router-link" style="margin-top: 1rem;">Fazer Quiz</a>
+            </div>
+        `;
+
+        // Conteúdo do Blog com o novo artigo
+        const BLOG_CONTENT = {
+            "menor-taxa": {
+                "title": "Maquininha com menor taxa em 2025: Ton ou InfinitePay?",
+                "content": `
+                    <p>Encontrar a maquininha com a menor taxa é o objetivo de todo empreendedor. Em 2025, a disputa segue acirrada, principalmente entre duas gigantes focadas em preço: <strong>Ton</strong> e <strong>InfinitePay</strong>.</p>
+                    <p>Mas a resposta para "qual a menor taxa?" não é simples. Depende do seu plano, do tipo de venda (débito, crédito à vista, parcelado) e do seu faturamento.</p>
+                    
+                    <h2>Análise: Ton (Plano UltraTon)</h2>
+                    <p>A Ton revolucionou o mercado com seus planos que variam as taxas. O plano <strong>UltraTon</strong> é projetado para quem quer as menores taxas, mas exige um faturamento mínimo.</p>
+                    <ul>
+                        <li><strong>Pix:</strong> 0,00%</li>
+                        <li><strong>Débito:</strong> 1,39%</li>
+                        <li><strong>Crédito 1x:</strong> 3,20%</li>
+                        <li><strong>Crédito 12x:</strong> 12,99%</li>
+                    </ul>
+                    <p><strong>Vantagem:</strong> Aceita CPF e CNPJ, sendo acessível para MEIs e autônomos. A nota no Reclame Aqui é excelente (8.7).</p>
+                    <p><strong>Desvantagem:</strong> Se você escolher o plano Básico (sem faturamento mínimo), as taxas são bem mais altas.</p>
+
+                    <h2>Análise: InfinitePay</h2>
+                    <p>A InfinitePay foca em clientes CNPJ (exceto MEI) e se destaca agressivamente nas taxas de crédito parcelado, com recebimento em 1 dia útil.</p>
+                    <ul>
+                        <li><strong>Pix:</strong> 0,00%</li>
+                        <li><strong>Débito:</strong> 1,38%</li>
+                        <li><strong>Crédito 1x:</strong> 3,16%</li>
+                        <li><strong>Crédito 12x:</strong> 12,45%</li>
+                    </ul>
+                    <p><strong>Vantagem:</strong> As taxas de parcelamento são, de fato, as menores do mercado para quem recebe em 1 dia. A máquina Smart é robusta.</p>
+                    <p><strong>Desvantagem:</strong> Não aceita MEI ou CPF. O foco é em faturamento médio/alto.</p>
+                    
+                    <img src="https://placehold.co/700x350/1E40AF/FFFFFF?text=Ton+vs+InfinitePay" alt="Comparativo Ton vs InfinitePay">
+
+                    <h2>Conclusão: Qual vence?</h2>
+                    <p>A resposta curta é:</p>
+                    <ul>
+                        <li><strong>Para MEI ou CPF:</strong> A <strong>Ton</strong> (no plano UltraTon) é imbatível e oferece a menor taxa.</li>
+                        <li><strong>Para CNPJ (exceto MEI) com alto volume no parcelado:</strong> A <strong>InfinitePay</strong> vence por uma pequena margem, especialmente em 12x.</li>
+                    </ul>
+                    <p>Ambas oferecem <strong>Taxa Zero no Pix</strong>, o que é excelente. Para a grande maioria dos pequenos negócios, a <strong>Ton</strong> oferece o pacote mais vantajoso e acessível em 2025.</p>
+                    ${BLOG_CTA_QUIZ}
+                `
+            },
+            "sem-aluguel": {
+                "title": "Vale a pena maquininha sem aluguel? Guia completo 2025",
+                "content": `
+                    <p>A resposta curta é: <strong>sim, para 99% dos casos</strong>. Antigamente, modelos de aluguel prendiam o lojista a uma mensalidade fixa, vendendo ou não.</p>
+                    <p>Hoje, empresas como <strong>Ton, SumUp, PagSeguro e Mercado Pago</strong> popularizaram a compra da máquina. Você paga um valor inicial (muitas vezes simbólico, a partir de 12x de R$ 2,90) e o equipamento é seu, sem mensalidade.</p>
+                    <h2>Quando o aluguel vale a pena?</h2>
+                    <p>O aluguel só se justifica para faturamentos muito altos (acima de R$ 30.000/mês), onde seria possível negociar taxas baixíssimas com os grandes bancos que "compensam" a mensalidade. Para o MEI, autônomo e pequeno lojista, a maquininha sem aluguel é a escolha certa para economizar.</p>
+                    ${BLOG_CTA_QUIZ}
+                `
+            },
+            "recebimento-rapido": {
+                "title": "Como receber no mesmo dia: 4 opções reais (e seus custos)",
+                "content": `
+                    <p>Receber o dinheiro das vendas rápido é vital para o fluxo de caixa. Existem duas modalidades principais no mercado: <strong>'Na Hora'</strong> e <strong>'Em 1 dia útil' (D+1)</strong>.</p>
+                    
+                    <h2>1. Recebimento 'Na Hora'</h2>
+                    <p><strong>PagSeguro</strong> e <strong>Mercado Pago</strong> são famosos por isso. O dinheiro cai na sua conta digital em segundos. A desvantagem? As taxas são as mais altas do mercado (ex: 4,99% no crédito à vista). É uma antecipação cara.</p>
+                    
+                    <h2>2. Recebimento 'Em 1 Dia Útil' (D+1)</h2>
+                    <p><strong>Ton (Plano UltraTon)</strong> e <strong>SumUp</strong> oferecem esse prazo. Você vende hoje, recebe amanhã (se for dia útil). A vantagem? As taxas são muito menores (ex: 3,20% no crédito à vista).</p>
+                    
+                    <h2>Conclusão</h2>
+                    <p>Se você puder esperar 24 horas, optar pelo recebimento em D+1 (Ton/SumUp) economiza muito dinheiro no final do mês. O recebimento 'Na Hora' (PagSeguro/Mercado) deve ser usado apenas em emergências, pois o custo é quase o dobro.</p>
+                    ${BLOG_CTA_QUIZ}
+                `
+            },
+            "para-mei": {
+                "title": "Maquininha para MEI: as 3 melhores para CPF ou CNPJ em 2025",
+                "content": `
+                    <p>O MEI (Microempreendedor Individual) precisa de 3 coisas: taxas baixas, zero burocracia e sem aluguel. A boa notícia é que as melhores opções do mercado aceitam tanto CPF quanto CNPJ de MEI.</p>
+                    <p>Estas são as 3 melhores opções para MEI em 2025:</p>
+                    
+                    <ol>
+                        <li><strong>Ton (Plano UltraTon):</strong> É a escolha mais popular. Oferece as menores taxas do mercado para quem fatura poco, sem aluguel, e aceita CPF/CNPJ. A taxa Pix 0% é um grande diferencial.</li>
+                        <li><strong>SumUp:</strong> Concorrente direta da Ton, tem taxas muito competitivas e é conhecida pelo melhor atendimento ao cliente do mercado (Nota 9.2 no Reclame Aqui). Também possui taxa Pix 0%.</li>
+                        <li><strong>PagSeguro:</strong> Uma opção versátil, com a maior variedade de máquinas. As taxas para recebimento 'na hora' são altas, mas se você escolher receber em 30 dias, elas ficam bem competitivas.</li>
+                    </ol>
+                    
+                    <p>Entre as 5 maiores (excluindo as de banco), todas são ótimas para MEI, exceto a InfinitePay, que não aceita MEI ou CPF, focando em CNPJ (LTDA, S/A, etc.).</p>
+                    ${BLOG_CTA_QUIZ}
+                `
+            },
+            "pagseguro-vs-mercadopago": {
+                "title": "PagSeguro vs Mercado Pago: Batalha do Recebimento Rápido 2025",
+                "content": `
+                    <p>Ambas são gigantes, conhecidas por oferecerem o recebimento <strong>'Na Hora'</strong> e por terem contas digitais integradas (PagBank e Mercado Pago). Mas qual é melhor?</p>
+                    
+                    <h2>Taxas e Prazos</h2>
+                    <p>Neste quesito, elas são praticamente <strong>idênticas</strong>. Ambas cobram as taxas mais altas do mercado para o recebimento 'Na Hora':</p>
+                    <ul>
+                        <li><strong>Débito:</strong> 1,99%</li>
+                        <li><strong>Crédito 1x:</strong> 4,99% (PagSeguro) vs 4,98% (Mercado Pago)</li>
+                        <li><strong>Pix:</strong> Ambas 0% via QR Code na máquina.</li>
+                    </ul>
+                    <p>Se você optar por receber em 14 ou 30 dias, as taxas caem consideravelmente em ambas.</p>
+
+                    <h2>Ecossistema</h2>
+                    <p>A escolha aqui depende de onde seu negócio "vive":</p>
+                    <ul>
+                        <li><strong>Mercado Pago:</strong> Se você vende no <strong>Mercado Livre</strong>, não há escolha melhor. A integração é perfeita e o dinheiro das vendas (online e presenciais) cai no mesmo lugar.</li>
+                        <li><strong>PagSeguro:</strong> Se você não vende no Mercado Livre, o PagSeguro (do UOL) oferece um ecossistema mais robusto e independente, com mais opções de máquinas e uma conta digital (PagBank) que muitos consideram mais completa que a do Mercado Pago.</li>
+                    </ul>
+                    
+                    <h2>Conclusão</h2>
+                    <p>É um empate técnico nas taxas. A decisão deve ser baseada no ecossistema: Vende no Mercado Livre? Vá de <strong>Mercado Pago</strong>. Para todos os outros casos, o <strong>PagSeguro</strong> costuma oferecer uma solução ligeiramente mais completa.</p>
+                    ${BLOG_CTA_QUIZ}
+                `
+            }
+        };
+
+        // --- /assets/js/quiz.js (embutido) ---
+        const QUIZ_STEPS = [
+            {
+                question: "Você já tem CNPJ (ou MEI) ou vai vender no CPF?",
+                key: "cnpj",
+                options: [
+                    { text: "Tenho CNPJ ou MEI", value: "cnpj" },
+                    { text: "Vou vender no CPF", value: "cpf" }
+                ]
+            },
+            {
+                question: "Qual seu faturamento mensal estimado com a maquininha?",
+                key: "faturamento",
+                options: [
+                    { text: "Até R$ 3.000", value: 3000 },
+                    { text: "Entre R$ 3.000 e R$ 10.000", value: 10000 },
+                    { text: "Entre R$ 10.000 e R$ 30.000", value: 30000 },
+                    { text: "Acima de R$ 30.000", value: 50000 }
+                ]
+            },
+            {
+                question: "Qual sua MAIOR prioridade?",
+                key: "prioridade",
+                options: [
+                    { text: "Pagar a menor taxa possível (Débito/Crédito)", value: "taxa" },
+                    { text: "Receber o dinheiro rápido (1 dia)", value: "prazo" },
+                    { text: "Pagar barato na maquininha", value: "custo" }
+                ]
+            },
+            {
+                question: "Você precisa de maquininha com chip (3G/4G) ou pode usar com celular?",
+                key: "conexao",
+                options: [
+                    { text: "Preciso com chip (independente)", value: "chip" },
+                    { text: "Posso usar com celular (Wi-Fi/Bluetooth)", value: "celular" }
+                ]
+            },
+            {
+                question: "Você precisa imprimir o recibo de papel?",
+                key: "impressao",
+                options: [
+                    { text: "Sim, preciso imprimir", value: "sim" },
+                    { text: "Não, posso enviar por SMS", "value": "nao" }
+                ]
+            },
+            {
+                question: "Você precisa aceitar Vale-Refeição (VR, VA, Sodexo)?",
+                key: "vale",
+                options: [
+                    { text: "Sim, é essencial", value: "sim" },
+                    { text: "Não, só débito, crédito e Pix", value: "nao" }
+                ]
+            }
+        ];
+        
+        let currentQuizStep = 0;
+        let quizAnswers = {};
+
+        const quizContainer = document.getElementById('quiz-steps-container');
+        const quizProgress = document.getElementById('quiz-progress');
+        const quizResultContainer = document.getElementById('quiz-result-container');
+
+        function renderQuizStep(stepIndex) {
+            if (stepIndex >= QUIZ_STEPS.length) {
+                showQuizResult();
+                return;
+            }
+            
+            const step = QUIZ_STEPS[stepIndex];
+            currentQuizStep = stepIndex;
+            quizContainer.innerHTML = '';
+            
+            const stepElement = document.createElement('div');
+            stepElement.className = 'quiz-step active';
+            
+            stepElement.innerHTML = `
+                <h2>${step.question}</h2>
+                <div class="quiz-options">
+                    ${step.options.map(opt => `
+                        <button class="quiz-option" data-key="${step.key}" data-value="${opt.value}">
+                            ${opt.text}
+                        </button>
+                    `).join('')}
+                </div>
+                <div class="quiz-nav">
+                    ${stepIndex > 0 ? '<button class="btn btn-secondary" id="quiz-prev">Voltar</button>' : '<div></div>'}
+                </div>
+            `;
+            
+            quizContainer.appendChild(stepElement);
+            updateQuizProgress();
+        }
+
+        function handleQuizOptionClick(e) {
+            if (!e.target.matches('.quiz-option')) return;
+            
+            const key = e.target.dataset.key;
+            const value = e.target.dataset.value;
+            
+            // Converte valores numéricos
+            const parsedValue = isNaN(value) ? value : parseInt(value, 10);
+            
+            quizAnswers[key] = parsedValue;
+            localStorage.setItem('quizAnswers', JSON.stringify(quizAnswers));
+            
+            renderQuizStep(currentQuizStep + 1);
+        }
+
+        function handleQuizPrevClick() {
+            if (currentQuizStep > 0) {
+                renderQuizStep(currentQuizStep - 1);
+            }
+        }
+
+        function updateQuizProgress() {
+            const progressPercent = ((currentQuizStep) / QUIZ_STEPS.length) * 100;
+            quizProgress.style.width = `${progressPercent}%`;
+        }
+
+        function showQuizResult() {
+            quizContainer.innerHTML = '';
+            quizProgress.style.width = '100%';
+            
+            // Lógica de recomendação (Simplificada)
+            const answers = quizAnswers;
+            let recommendations = [...MAQUININHAS_DATA];
+            let reason = "";
+
+            // 1. Filtro de Vale-Refeição (Eliminatório)
+            if (answers.vale === 'sim') {
+                recommendations = recommendations.filter(m => m.vale === true);
+                reason = "Filtramos as que aceitam vale-refeição. ";
+            }
+            
+            // 2. Filtro de CNPJ (Eliminatório)
+            if (answers.cnpj === 'cpf') {
+                // InfinitePay é ruim para CPF
+                recommendations = recommendations.filter(m => m.slug !== 'infinitepay');
+                reason += "Selecionamos as melhores para CPF. ";
+            }
+            
+            // 3. Filtro de Faturamento (Peso)
+            if (answers.faturamento > 20000) {
+                // InfinitePay ganha força
+                recommendations.sort((a, b) => (b.faturamentoIdeal > 15000 ? 1 : -1) - (a.faturamentoIdeal > 15000 ? 1 : -1));
+                reason += "Considerando seu faturamento alto. ";
+            } else {
+                // Ton e SumUp ganham força
+                recommendations.sort((a, b) => (b.faturamentoIdeal < 10000 ? 1 : -1) - (a.faturamentoIdeal < 10000 ? 1 : -1));
+                reason += "Priorizando baixo custo para seu faturamento. ";
+            }
+            
+            // 4. Prioridade (Taxa vs Prazo)
+            if (answers.prioridade === 'taxa') {
+                recommendations.sort((a, b) => a.taxas.credito1x - b.taxas.credito1x);
+                reason += "Ordenamos pela menor taxa de crédito/débito. ";
+            } else if (answers.prioridade === 'prazo') {
+                recommendations = recommendations.filter(m => m.recebimento === 'Na hora' || m.recebimento === '1 dia útil');
+                recommendations.sort((a, b) => (a.recebimento === 'Na hora' ? -1 : 1) - (b.recebimento === 'Na hora' ? -1 : 1));
+                reason += "Priorizamos as de recebimento mais rápido. ";
+            }
+            
+            // Todas as opções recomendadas têm Pix 0%
+            if (recommendations.every(m => m.taxas.pix === 0)) {
+                reason += "Todas as opções recomendadas têm taxa zero no Pix!"
+            }
+
+            // Garantir que temos recomendações
+            if (recommendations.length === 0) {
+                recommendations = [MAQUININHAS_DATA.find(m => m.slug === 'ton')]; // Fallback
+                reason = "Seu filtro foi muito específico. Esta é a opção mais popular.";
+            }
+
+            const principal = recommendations[0];
+            const alternativas = recommendations.slice(1, 3);
+            
+            quizResultContainer.innerHTML = `
+                <h2>Recomendação para Você!</h2>
+                <div class="result-card">
+                    <h3>Sua maquininha ideal é a <strong>${principal.nome}</strong></h3>
+                    <img src="${principal.logo}" alt="${principal.nome}" class="brand-logo">
+                    <p class="result-reason"><strong>Por quê?</strong> ${reason}</p>
+                    <a href="#review/${principal.slug}" class="btn btn-success btn-lg router-link">Ver Análise Completa</a>
+                </div>
+                
+                <h3>Outras boas alternativas:</h3>
+                <div id="quiz-alternatives">
+                    ${alternativas.map(alt => `
+                        <a href="#review/${alt.slug}" class="router-link">
+                            <div class="alternative-card">
+                                <img src="${alt.logo}" alt="${alt.nome}" class="brand-logo">
+                                <div>
+                                    <h4 style="color: var(--text-color);">${alt.nome}</h4>
+                                    <p style="margin:0;">${alt.slogan}</p>
+                                </div>
+                            </div>
+                        </a>
+                    `).join('')}
+                </div>
+                
+                <button class="btn" id="quiz-restart" style="margin-top: 2rem;">Refazer Quiz</button>
+            `;
+            quizResultContainer.style.display = 'block';
+        }
+        
+        function restartQuiz() {
+            currentQuizStep = 0;
+            quizAnswers = {};
+            localStorage.removeItem('quizAnswers');
+            quizResultContainer.style.display = 'none';
+            renderQuizStep(0);
+        }
+
+        // --- /assets/js/main.js (embutido) ---
+        
+        // Router SPA
+        const pages = document.querySelectorAll('.page');
+        const navLinks = document.querySelectorAll('.router-link');
+        
+        function showPage(pageId, param) {
+            pages.forEach(p => p.style.display = 'none');
+            let pageToShow = document.getElementById(pageId);
+            
+            document.title = "Comparador de Maquininhas 2025"; // Reset
+            
+            // Lógica para páginas dinâmicas
+            if (pageId === 'page-review' && param) {
+                pageToShow = document.getElementById('page-review');
+                populateReviewPage(param);
+            } else if (pageId === 'page-blog' && param) {
+                pageToShow = document.getElementById('page-blog');
+                populateBlogPage(param);
+            } else if (pageId === 'page-quiz') {
+                restartQuiz();
+            } else if (pageId === 'page-comparar') {
+                renderComparadorTable(MAQUININHAS_DATA); // Renderiza a tabela completa
+            }
+            
+            if (pageToShow) {
+                pageToShow.style.display = 'block';
+            } else {
+                document.getElementById('page-home').style.display = 'block'; // Fallback
+            }
+            
+            updateActiveNavLink(pageId, param);
+            window.scrollTo(0, 0);
+            
+            // Fecha o menu mobile ao navegar
+            document.getElementById('main-nav').classList.remove('active');
+        }
+        
+        function updateActiveNavLink(pageId, param) {
+            const currentHash = param ? `#${pageId}/${param}` : `#${pageId}`;
+            
+            document.querySelectorAll('.main-nav a').forEach(a => {
+                a.classList.remove('active');
+                const linkHref = a.getAttribute('href');
+                
+                // Lógica para "acender" o link do Blog
+                if (pageId === 'page-blog' && linkHref.startsWith('#page-blog')) {
+                    a.classList.add('active');
+                } else if (linkHref === currentHash) {
+                    a.classList.add('active');
+                }
+            });
+        }
+        
+        function handleHashChange() {
+            const hash = window.location.hash.substring(1) || 'page-home';
+            const [pageId, param] = hash.split('/');
+            
+            // Corrige se a hash for só "page-review" sem param
+            if (pageId.startsWith('page-')) {
+                showPage(pageId, param);
+            } else {
+                // Fallback para hashes antigas (ex: #ton)
+                const matchingMachine = MAQUININHAS_DATA.find(m => m.slug === pageId);
+                if (matchingMachine) {
+                    window.location.hash = `page-review/${pageId}`;
+                } else {
+                    showPage('page-home');
+                }
+            }
+        }
+        
+        // Adiciona listeners aos links do router
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Não previne default, pois queremos que o hash mude
+                // O evento hashchange vai cuidar da troca de página
+                
+                // Se o link for para o quiz, reseta
+                if (e.currentTarget.getAttribute('href') === '#page-quiz') {
+                    restartQuiz();
+                }
+            });
+        });
+
+        // Menu Mobile
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Footer Ano
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+        
+        // --- /assets/js/home.js (embutido) ---
+        
+        // Função da Tabela Home ATUALIZADA com Nota RA
+        function renderHomeTable() {
+            const tableBody = document.getElementById('home-compare-table')?.querySelector('tbody');
+            if (!tableBody) return;
+            
+            const data = MAQUININHAS_DATA;
+            const minPix = Math.min(...data.map(m => m.taxas.pix));
+            
+            tableBody.innerHTML = data.map(m => `
+                <tr>
+                    <td data-label="Marca">
+                        <a href="#page-review/${m.slug}" class="brand-logo router-link">
+                            <img src="${m.logo}" alt="${m.nome}" loading="lazy">
+                            <span>${m.nome}</span>
+                        </a>
+                    </td>
+                    <td data-label="Débito" class="rate-highlight">${m.taxas.debito.toFixed(2)}%</td>
+                    <td data-label="Taxa Pix" class="${m.taxas.pix === minPix ? 'rate-highlight' : ''}">${m.taxas.pix.toFixed(2)}%</td>
+                    <td data-label="Crédito 1x">${m.taxas.credito1x.toFixed(2)}%</td>
+                    <td data-label="Nota RA">
+                        <strong class="ra-score" style="color: ${m.notaRa >= 8 ? 'var(--success-dark)' : (m.notaRa >= 7 ? 'var(--text-color)' : '#F59E0B')}">
+                            ${m.notaRa.toFixed(1)}
+                        </strong>
+                    </td>
+                    <td data-label="Análise">
+                        <a href="#page-review/${m.slug}" class="btn btn-primary-outline router-link" style="border-width: 2px;">Ver Análise</a>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // --- /assets/js/comparador.js (embutido) ---
+        const filtersForm = document.getElementById('filters-form');
+        const faturamentoSlider = document.getElementById('filter-faturamento');
+        const faturamentoValue = document.getElementById('filter-faturamento-value');
+        const resultsCount = document.getElementById('comparador-results-count');
+        const tableBody = document.getElementById('comparador-table-body');
+        
+        const checkIcon = `<svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>`;
+        const xIcon = `<svg class="x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>`;
+
+        function formatRate(rate) {
+            return `${rate.toFixed(2)}%`.replace('.', ',');
+        }
+
+        // Função da Tabela Comparador ATUALIZADA com Tap On e Link de Afiliado
+        function renderComparadorTable(data) {
+            if (!tableBody) return;
+            
+            // Encontra as menores taxas
+            const minDebito = Math.min(...data.map(m => m.taxas.debito));
+            const minPix = Math.min(...data.map(m => m.taxas.pix));
+            const minCredito1x = Math.min(...data.map(m => m.taxas.credito1x));
+            const minCredito12x = Math.min(...data.map(m => m.taxas.credito12x));
+            
+            tableBody.innerHTML = data.map(m => `
+                <tr>
+                    <td>
+                        <a href="#page-review/${m.slug}" class="brand-logo router-link">
+                            <img src="${m.logo}" alt="${m.nome}" loading="lazy">
+                            <span>${m.nome}</span>
+                        </a>
+                    </td>
+                    <td>${m.modelos.join(', ')}</td>
+                    <td class="${m.taxas.debito === minDebito ? 'rate-best' : ''}">${formatRate(m.taxas.debito)}</td>
+                    <td class="${m.taxas.pix === minPix ? 'rate-best' : ''}">${formatRate(m.taxas.pix)}</td>
+                    <td class="${m.taxas.credito1x === minCredito1x ? 'rate-best' : ''}">${formatRate(m.taxas.credito1x)}</td>
+                    <td class="${m.taxas.credito12x === minCredito12x ? 'rate-best' : ''}">${formatRate(m.taxas.credito12x)}</td>
+                    <td>${m.recebimento}</td>
+                    <td>${m.chip ? 'Chip' : ''}${m.chip && m.wifi ? ' + ' : ''}${m.wifi ? 'Wi-Fi' : ''}</td>
+                    <td style="text-align: center;">${m.impressao ? checkIcon : xIcon}</td>
+                    <td style="text-align: center;">${m.tapon ? checkIcon : xIcon}</td>
+                    <td><strong class="ra-score" style="color: ${m.notaRa >= 8 ? 'var(--success-dark)' : (m.notaRa >= 7 ? 'var(--text-color)' : '#F59E0B')}">${m.notaRa.toFixed(1)}</strong></td>
+                    <td class="no-print"><a href="${m.link}" target="_blank" rel="noopener" class="btn btn-success" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Ver Oferta</a></td>
+                </tr>
+            `).join('');
+            
+            if (resultsCount) {
+                resultsCount.textContent = `Mostrando ${data.length} de ${MAQUININHAS_DATA.length} resultados.`;
+            }
+        }
+        
+        // Função de Filtros ATUALIZADA com Tap On
+        function applyFilters() {
+            const formData = new FormData(filtersForm);
+            const faturamento = parseInt(faturamentoSlider.value, 10);
+            const prioridade = formData.get('prioridade');
+            const conectividade = formData.getAll('conectividade'); // ['wifi', 'chip']
+            const funcionalidades = formData.getAll('funcionalidades'); // ['impressao', 'vale', 'tapon']
+            
+            let filteredData = [...MAQUININHAS_DATA];
+            
+            // Faturamento (apenas ordena, não filtra)
+            filteredData.sort((a, b) => {
+                const diffA = Math.abs(a.faturamentoIdeal - faturamento);
+                const diffB = Math.abs(b.faturamentoIdeal - faturamento);
+                return diffA - diffB;
+            });
+            
+            // Conectividade
+            if (conectividade.includes('wifi')) {
+                filteredData = filteredData.filter(m => m.wifi === true);
+            }
+            if (conectividade.includes('chip')) {
+                filteredData = filteredData.filter(m => m.chip === true);
+            }
+            
+            // Funcionalidades
+            if (funcionalidades.includes('impressao')) {
+                filteredData = filteredData.filter(m => m.impressao === true);
+            }
+            if (funcionalidades.includes('vale')) {
+                filteredData = filteredData.filter(m => m.vale === true);
+            }
+            if (funcionalidades.includes('tapon')) {
+                filteredData = filteredData.filter(m => m.tapon === true);
+            }
+            
+            // Prioridade (Ordenação)
+            if (prioridade === 'taxa') {
+                // Ordena pela soma de pix, débito e crédito 1x
+                filteredData.sort((a, b) => (a.taxas.pix + a.taxas.debito + a.taxas.credito1x) - (b.taxas.pix + b.taxas.debito + b.taxas.credito1x));
+            } else if (prioridade === 'prazo') {
+                filteredData.sort((a, b) => {
+                    const prazoA = a.recebimento.includes('Na hora') ? 0 : (a.recebimento.includes('1 dia') ? 1 : 2);
+                    const prazoB = b.recebimento.includes('Na hora') ? 0 : (b.recebimento.includes('1 dia') ? 1 : 2);
+                    return prazoA - prazoB;
+                });
+            } else if (prioridade === 'custo') {
+                // Simplificado, pois não temos o preço exato
+                filteredData.sort((a, b) => (a.preco.includes('Aluguel') ? 1 : -1) - (b.preco.includes('Aluguel') ? 1 : -1));
+            }
+
+            renderComparadorTable(filteredData);
+        }
+        
+        if (filtersForm) {
+            filtersForm.addEventListener('input', applyFilters);
+            filtersForm.addEventListener('reset', () => {
+                setTimeout(() => applyFilters(), 0);
+            });
+            
+            faturamentoSlider.addEventListener('input', () => {
+                faturamentoValue.textContent = parseInt(faturamentoSlider.value, 10).toLocaleString('pt-BR');
+            });
+            
+            // Mobile Filter Toggle
+            document.getElementById('filter-toggle')?.addEventListener('click', () => {
+                document.getElementById('page-comparar-filters').classList.toggle('active');
+            });
+        }
+        
+        // --- /assets/js/simulador.js (embutido) ---
+        let currentMachineRates = {}; // Agora vai guardar o objeto da máquina
+        const simulatorAmount = document.getElementById('simulator-amount');
+        
+        function formatCurrency(value) {
+            return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+        
+        function updateSimulator() {
+            if (!simulatorAmount || !currentMachineRates.taxas) return;
+            
+            let value = parseFloat(simulatorAmount.value.replace(/\./g, '').replace(',', '.')) || 0;
+            if (isNaN(value)) value = 0;
+            
+            const rates = currentMachineRates.taxas;
+
+            const receivedPix = value * (1 - (rates.pix / 100));
+            const receivedDebito = value * (1 - (rates.debito / 100));
+            const receivedCredito1x = value * (1 - (rates.credito1x / 100));
+
+            // Atualiza taxas
+            document.getElementById('sim-pix-rate').textContent = rates.pix.toFixed(2);
+            document.getElementById('sim-debito-rate').textContent = rates.debito.toFixed(2);
+            document.getElementById('sim-credito-rate').textContent = rates.credito1x.toFixed(2);
+
+            // Atualiza valores
+            document.getElementById('sim-pix-value').textContent = formatCurrency(receivedPix);
+            document.getElementById('sim-debito-value').textContent = formatCurrency(receivedDebito);
+            document.getElementById('sim-credito-value').textContent = formatCurrency(receivedCredito1x);
+        }
+
+        if (simulatorAmount) {
+            simulatorAmount.addEventListener('input', (e) => {
+                // Formata o input como moeda
+                let value = e.target.value.replace(/\D/g, '');
+                value = (parseInt(value, 10) / 100).toFixed(2);
+                if (isNaN(value)) value = "0,00";
+                
+                value = value.replace('.', ',');
+                if (value.length > 6) { // 1.000,00
+                    value = value.replace(/(\d)(?=(\d{3})+(\,))/g, "$1.");
+                }
+                e.target.value = value;
+                
+                updateSimulator();
+            });
+        }
+        
+        // --- /assets/js/review.js (embutido) ---
+        
+        // **FUNÇÃO ATUALIZADA COM LINKS DE AFILIADO E DESCONTOS**
+        function populateReviewPage(slug) {
+            const machine = MAQUININHAS_DATA.find(m => m.slug === slug);
+            if (!machine) {
+                window.location.hash = '#page-home';
+                return;
+            }
+            
+            document.title = `Análise Maquininha ${machine.nome} 2025 | Taxas e Prós`;
+            
+            // Header
+            document.getElementById('review-logo').src = machine.logo;
+            document.getElementById('review-logo').alt = `Logo ${machine.nome}`;
+            document.getElementById('review-slogan').textContent = machine.slogan;
+            
+            // Imagem da Maquininha
+            const reviewImage = document.getElementById('review-image');
+            reviewImage.src = machine.imagem;
+            reviewImage.alt = `Imagem da maquininha ${machine.nome}`;
+            
+            // Ideal Para
+            document.getElementById('review-ideal-title').textContent = `Para quem a ${machine.nome} é ideal?`;
+            document.getElementById('review-ideal-list').innerHTML = machine.idealPara.map(item => `<li>${item}</li>`).join('');
+            
+            // Prós e Contras
+            document.getElementById('review-pros-list').innerHTML = machine.pros.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('review-cons-list').innerHTML = machine.cons.map(item => `<li>${item}</li>`).join('');
+
+            // FAQ
+            document.getElementById('review-faq-accordion').innerHTML = machine.faq.map((item, index) => `
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-${index}">
+                        ${item.q}
+                    </button>
+                    <div class="faq-answer" id="faq-${index}">
+                        <p>${item.a}</p>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Simulador
+            currentMachineRates = machine; // Passa o objeto da máquina inteiro
+            updateSimulator();
+            
+            // --- ATUALIZAÇÃO DE LINKS E DESCONTOS ---
+            const discountText = machine.desconto || "";
+            const discountBadgeHeader = document.getElementById('review-cta-header-discount');
+            const discountBadgeSidebar = document.getElementById('review-cta-sidebar-discount');
+            const stickyCtaText = document.getElementById('review-sticky-text');
+            const ctaHeader = document.getElementById('review-cta-header');
+
+            // Atualiza links
+            ctaHeader.href = machine.link;
+            document.getElementById('review-cta-sidebar').href = machine.link;
+            document.getElementById('review-cta-sticky').href = machine.link;
+
+            // Atualiza textos de desconto
+            if (discountText) {
+                discountBadgeHeader.textContent = `🔥 ${discountText}`;
+                discountBadgeSidebar.textContent = `🔥 ${discountText}`;
+                stickyCtaText.textContent = `Pedir com ${discountText}`;
+            } else {
+                discountBadgeHeader.textContent = "";
+                discountBadgeSidebar.textContent = "";
+                stickyCtaText.textContent = `Pedir ${machine.nome} Agora`;
+            }
+
+            // Atualiza texto do botão principal (Header)
+            ctaHeader.textContent = `Pedir ${machine.nome} Agora`;
+        }
+
+        // Acordeão
+        document.body.addEventListener('click', (e) => {
+            if (e.target.matches('.faq-question')) {
+                const item = e.target.parentElement;
+                const answer = e.target.nextElementSibling;
+                
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    e.target.setAttribute('aria-expanded', 'false');
+                    answer.style.maxHeight = null;
+                } else {
+                    // Fecha outros abertos
+                    item.parentElement.querySelectorAll('.faq-item.active').forEach(openItem => {
+                        openItem.classList.remove('active');
+                        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                        openItem.querySelector('.faq-answer').style.maxHeight = null;
+                    });
+                    
+                    // Abre o atual
+                    item.classList.add('active');
+                    e.target.setAttribute('aria-expanded', 'true');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            }
+            
+            // Quiz
+            if (e.target.matches('.quiz-option')) {
+                handleQuizOptionClick(e);
+            }
+            if (e.target.matches('#quiz-prev')) {
+                handleQuizPrevClick();
+            }
+            if (e.target.matches('#quiz-restart')) {
+                restartQuiz();
+            }
+        });
+        
+        // --- /assets/js/blog.js (embutido) ---
+        function populateBlogPage(slug) {
+            const post = BLOG_CONTENT[slug];
+            if (!post) {
+                window.location.hash = '#page-home';
+                return;
+            }
+            
+            document.title = `${post.title} | ComparaMaq 2025`;
+            document.getElementById('blog-title').textContent = post.title;
+            document.getElementById('blog-content').innerHTML = post.content;
+        }
+
+        // --- /assets/js/popups.js (embutido) ---
+        const exitPopup = document.getElementById('exit-popup-overlay');
+        const exitPopupClose = document.getElementById('exit-popup-close');
+        const exitPopupCta = document.getElementById('exit-popup-cta');
+        let popupShown = false;
+        
+        function showExitPopup() {
+            if (popupShown) return;
+            exitPopup.style.display = 'flex';
+            popupShown = true;
+            localStorage.setItem('popupShown', 'true');
+        }
+        
+        function hideExitPopup() {
+            exitPopup.style.display = 'none';
+        }
+        
+        if (localStorage.getItem('popupShown') !== 'true') {
+            document.body.addEventListener('mouseleave', () => {
+                // Atraso para não ser tão intrusivo
+                setTimeout(showExitPopup, 500);
+            });
+            
+            // Mostra após 15s se não saiu
+            setTimeout(showExitPopup, 15000);
+        }
+        
+        exitPopupClose.addEventListener('click', hideExitPopup);
+        exitPopupCta.addEventListener('click', () => {
+            hideExitPopup();
+            // O router-link já cuida da navegação
+        });
+
+        // --- INICIALIZAÇÃO ---
+        renderHomeTable(); // Renderiza a tabela da home
+        handleHashChange(); // Trata a URL na carga inicial
+        window.addEventListener('hashchange', handleHashChange); // Trata mudanças de hash
+        
+        // Carrega respostas do quiz do localStorage
+        const savedAnswers = localStorage.getItem('quizAnswers');
+        if (savedAnswers) {
+            quizAnswers = JSON.parse(savedAnswers);
+        }
+
+    });
+    </script>
+
+</body>
+</html>
