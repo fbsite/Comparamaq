@@ -6,6 +6,9 @@
     <title>Qual a Melhor Maquininha de Cartão? Compare 5 Marcas [2025]</title>
     <meta name="description" content="Compare taxas de débito, crédito, Pix e Nota RA das 5 principais maquininhas do Brasil em 2025: Ton, InfinitePay, SumUp, PagSeguro e Mercado Pago.">
     
+    <!-- Favicon SVG Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>">
+    
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1346,7 +1349,7 @@
                 </div>
                 <!-- CTA do Header com badge de desconto -->
                 <div style="text-align: center;">
-                    <a href="#" id="review-cta-header" class="btn btn-success btn-lg no-print" target="_blank">Pedir Agora</a>
+                    <a href="#" id="review-cta-header" class="btn btn-success btn-lg no-print" target="_blank" rel="noopener">Pedir Agora</a>
                     <p id="review-cta-header-discount" class="discount-badge"></p>
                 </div>
             </div>
@@ -1414,7 +1417,7 @@
                     </div>
                     <!-- CTA da Sidebar com badge de desconto -->
                     <p id="review-cta-sidebar-discount" class="discount-badge" style="text-align: center; margin-bottom: 0.5rem; display: block;"></p>
-                    <a href="#" id="review-cta-sidebar" class="btn btn-success btn-full" target="_blank">
+                    <a href="#" id="review-cta-sidebar" class="btn btn-success btn-full" target="_blank" rel="noopener">
                         Visitar Site Oficial
                     </a>
                 </div>
@@ -1423,7 +1426,7 @@
         
         <!-- CTA Flutuante Fixo (Texto atualizado por JS) -->
         <div class="sticky-cta no-print">
-            <a href="#" id="review-cta-sticky" class="btn btn-success">
+            <a href="#" id="review-cta-sticky" class="btn btn-success" target="_blank" rel="noopener">
                 <span id="review-sticky-text">Comprar com Desconto</span>
             </a>
         </div>
@@ -1513,7 +1516,7 @@
     document.addEventListener('DOMContentLoaded', () => {
 
         // --- /assets/data/maquininhas.json ---
-        // **LINKS E DESCONTOS ATUALIZADOS**
+        // **LINKS, DESCONTOS E DADOS DA INFINITEPAY ATUALIZADOS**
         const MAQUININHAS_DATA = [
           {
             "slug": "ton",
@@ -1562,11 +1565,11 @@
             "faturamentoIdeal": 15000,
             "link": "http://buy.infinitepay.io/smart?rid=fabio-olliv",
             "desconto": "R$15 de desconto",
-            "idealPara": ["Quem vende muito no crédito parcelado", "Lojas com faturamento médio/alto", "Quem precisa de uma máquina smart (Android)"],
-            "pros": ["Taxa Pix 0%", "Melhores taxas no crédito parcelado", "Recebimento em 1 dia útil", "Máquina Smart com sistema Android", "Sem aluguel"],
-            "cons": ["Exige CNPJ (não aceita MEI ou PF)", "Faturamento mínimo para ter as melhores taxas", "Preço da máquina é mais alto", "Não aceita vale-refeição"],
+            "idealPara": ["CNPJ, MEI ou CPF que vende muito no crédito parcelado", "Lojas com faturamento médio/alto", "Quem precisa de uma máquina smart (Android)"],
+            "pros": ["Taxa Pix 0%", "Melhores taxas no crédito parcelado", "Recebimento em 1 dia útil", "Máquina Smart com sistema Android", "Sem aluguel", "Agora aceita CPF e MEI"],
+            "cons": ["Faturamento mínimo para ter as melhores taxas", "Preço da máquina é mais alto", "Não aceita vale-refeição"],
             "faq": [
-                { "q": "InfinitePay aceita MEI ou CPF?", "a": "Não, a InfinitePay é exclusiva para clientes com CNPJ ativo (exceto MEI)." },
+                { "q": "InfinitePay aceita MEI ou CPF?", "a": "Sim, a InfinitePay agora aceita tanto CNPJ (incluindo MEI) quanto CPF, tornando-se acessível para todos os tipos de empreendedores." },
                 { "q": "A InfinitePay tem Tap on Celular?", "a": "Sim, a InfinitePay oferece o InfiniteTap, que transforma seu celular em maquininha." }
             ]
           },
@@ -1665,7 +1668,7 @@
             </div>
         `;
 
-        // Conteúdo do Blog com o novo artigo
+        // **CONTEÚDO DO BLOG CORRIGIDO**
         const BLOG_CONTENT = {
             "menor-taxa": {
                 "title": "Maquininha com menor taxa em 2025: Ton ou InfinitePay?",
@@ -1685,25 +1688,25 @@
                     <p><strong>Desvantagem:</strong> Se você escolher o plano Básico (sem faturamento mínimo), as taxas são bem mais altas.</p>
 
                     <h2>Análise: InfinitePay</h2>
-                    <p>A InfinitePay foca em clientes CNPJ (exceto MEI) e se destaca agressivamente nas taxas de crédito parcelado, com recebimento em 1 dia útil.</p>
+                    <p>A InfinitePay se destaca agressivamente nas taxas de crédito parcelado, com recebimento em 1 dia útil.</p>
                     <ul>
                         <li><strong>Pix:</strong> 0,00%</li>
                         <li><strong>Débito:</strong> 1,38%</li>
                         <li><strong>Crédito 1x:</strong> 3,16%</li>
                         <li><strong>Crédito 12x:</strong> 12,45%</li>
                     </ul>
-                    <p><strong>Vantagem:</strong> As taxas de parcelamento são, de fato, as menores do mercado para quem recebe em 1 dia. A máquina Smart é robusta.</p>
-                    <p><strong>Desvantagem:</strong> Não aceita MEI ou CPF. O foco é em faturamento médio/alto.</p>
+                    <p><strong>Vantagem:</strong> As taxas de parcelamento são, de fato, as menores do mercado para quem recebe em 1 dia. A máquina Smart é robusta. Agora também aceita CPF e MEI.</p>
+                    <p><strong>Desvantagem:</strong> O foco é em faturamento médio/alto para ter as melhores taxas.</p>
                     
                     <img src="https://placehold.co/700x350/1E40AF/FFFFFF?text=Ton+vs+InfinitePay" alt="Comparativo Ton vs InfinitePay">
 
                     <h2>Conclusão: Qual vence?</h2>
-                    <p>A resposta curta é:</p>
+                    <p>A resposta curta é baseada no faturamento:</p>
                     <ul>
-                        <li><strong>Para MEI ou CPF:</strong> A <strong>Ton</strong> (no plano UltraTon) é imbatível e oferece a menor taxa.</li>
-                        <li><strong>Para CNPJ (exceto MEI) com alto volume no parcelado:</strong> A <strong>InfinitePay</strong> vence por uma pequena margem, especialmente em 12x.</li>
+                        <li><strong>Para faturamento mais baixo (MEI/CPF):</strong> A <strong>Ton</strong> (no plano UltraTon) é imbatível, oferecendo taxas excelentes para quem está começando.</li>
+                        <li><strong>Para faturamento médio/alto (CNPJ/CPF) com alto volume no parcelado:</strong> A <strong>InfinitePay</strong> vence por uma pequena margem, especialmente em 12x, e agora é acessível para todos.</li>
                     </ul>
-                    <p>Ambas oferecem <strong>Taxa Zero no Pix</strong>, o que é excelente. Para a grande maioria dos pequenos negócios, a <strong>Ton</strong> oferece o pacote mais vantajoso e acessível em 2025.</p>
+                    <p>Ambas oferecem <strong>Taxa Zero no Pix</strong>, o que é excelente. Avalie seu volume de vendas para decidir.</p>
                     ${BLOG_CTA_QUIZ}
                 `
             },
@@ -1726,10 +1729,10 @@
                     <p><strong>PagSeguro</strong> e <strong>Mercado Pago</strong> são famosos por isso. O dinheiro cai na sua conta digital em segundos. A desvantagem? As taxas são as mais altas do mercado (ex: 4,99% no crédito à vista). É uma antecipação cara.</p>
                     
                     <h2>2. Recebimento 'Em 1 Dia Útil' (D+1)</h2>
-                    <p><strong>Ton (Plano UltraTon)</strong> e <strong>SumUp</strong> oferecem esse prazo. Você vende hoje, recebe amanhã (se for dia útil). A vantagem? As taxas são muito menores (ex: 3,20% no crédito à vista).</p>
+                    <p><strong>Ton (Plano UltraTon)</strong>, <strong>SumUp</strong> e <strong>InfinitePay</strong> oferecem esse prazo. Você vende hoje, recebe amanhã (se for dia útil). A vantagem? As taxas são muito menores (ex: 3,20% no crédito à vista).</p>
                     
                     <h2>Conclusão</h2>
-                    <p>Se você puder esperar 24 horas, optar pelo recebimento em D+1 (Ton/SumUp) economiza muito dinheiro no final do mês. O recebimento 'Na Hora' (PagSeguro/Mercado) deve ser usado apenas em emergências, pois o custo é quase o dobro.</p>
+                    <p>Se você puder esperar 24 horas, optar pelo recebimento em D+1 (Ton/SumUp/InfinitePay) economiza muito dinheiro no final do mês. O recebimento 'Na Hora' (PagSeguro/Mercado) deve ser usado apenas em emergências, pois o custo é quase o dobro.</p>
                     ${BLOG_CTA_QUIZ}
                 `
             },
@@ -1742,10 +1745,10 @@
                     <ol>
                         <li><strong>Ton (Plano UltraTon):</strong> É a escolha mais popular. Oferece as menores taxas do mercado para quem fatura poco, sem aluguel, e aceita CPF/CNPJ. A taxa Pix 0% é um grande diferencial.</li>
                         <li><strong>SumUp:</strong> Concorrente direta da Ton, tem taxas muito competitivas e é conhecida pelo melhor atendimento ao cliente do mercado (Nota 9.2 no Reclame Aqui). Também possui taxa Pix 0%.</li>
-                        <li><strong>PagSeguro:</strong> Uma opção versátil, com a maior variedade de máquinas. As taxas para recebimento 'na hora' são altas, mas se você escolher receber em 30 dias, elas ficam bem competitivas.</li>
+                        <li><strong>InfinitePay:</strong> Recentemente, a InfinitePay começou a aceitar MEI e CPF, tornando-se uma excelente opção para quem fatura um pouco mais, especialmente no crédito parcelado.</li>
                     </ol>
                     
-                    <p>Entre as 5 maiores (excluindo as de banco), todas são ótimas para MEI, exceto a InfinitePay, que não aceita MEI ou CPF, focando em CNPJ (LTDA, S/A, etc.).</p>
+                    <p>PagSeguro e Mercado Pago também são boas opções, especialmente se você precisa receber 'na hora' ou aceitar vale-refeição, mas suas taxas de antecipação são mais altas.</p>
                     ${BLOG_CTA_QUIZ}
                 `
             },
@@ -1896,11 +1899,12 @@
             quizProgress.style.width = `${progressPercent}%`;
         }
 
+        // **LÓGICA DO QUIZ CORRIGIDA (NÃO FILTRA MAIS INFINITEPAY)**
         function showQuizResult() {
             quizContainer.innerHTML = '';
             quizProgress.style.width = '100%';
             
-            // Lógica de recomendação (Simplificada)
+            // Lógica de recomendação
             const answers = quizAnswers;
             let recommendations = [...MAQUININHAS_DATA];
             let reason = "";
@@ -1911,11 +1915,11 @@
                 reason = "Filtramos as que aceitam vale-refeição. ";
             }
             
-            // 2. Filtro de CNPJ (Eliminatório)
+            // 2. Filtro de CNPJ (Não é mais eliminatório)
             if (answers.cnpj === 'cpf') {
-                // InfinitePay é ruim para CPF
-                recommendations = recommendations.filter(m => m.slug !== 'infinitepay');
                 reason += "Selecionamos as melhores para CPF. ";
+            } else {
+                reason += "Selecionamos as melhores para CNPJ/MEI. ";
             }
             
             // 3. Filtro de Faturamento (Peso)
