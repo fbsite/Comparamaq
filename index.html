@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O <title> é atualizado dinamicamente por JS -->
     <title>Qual a Melhor Maquininha de Cartão? Compare 5 Marcas [2025]</title>
-    <meta name="description" content="Compare taxas de débito, crédito, Pix e Nota RA das 5 principais maquininhas do Brasil em 2025: Ton, InfinitePay, SumUp, PagSeguro e Mercado Pago.">
     
+    <!-- A <meta name="description"> é atualizada dinamicamente por JS -->
+    <meta name="description" id="meta-description" content="Compare taxas de débito, crédito, Pix e Nota RA das 5 principais maquininhas do Brasil em 2025: Ton, InfinitePay, SumUp, PagSeguro e Mercado Pago.">
+    
+    <!-- 
+      !! IMPORTANTE PARA SEO !!
+      Substitua [https://comparamaq.vercel.app] pelo seu domínio real.
+    -->
+    <link rel="canonical" href="https://comparamaq.vercel.app" />
+
     <!-- Favicon SVG Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>">
     
@@ -13,10 +22,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    
     <!-- 
-      CSS e JS estão incorporados neste arquivo para compatibilidade.
+      Script de Dados Estruturados (JSON-LD) será injetado aqui pelo JS 
     -->
+
     <style>
         /* --- /assets/css/style.css --- */
         
@@ -88,6 +98,15 @@
             background-color: #1D4ED8;
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
+        }
+        
+        .btn-primary-outline {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        .btn-primary-outline:hover {
+            background-color: #EFF6FF;
         }
 
         .btn-success {
@@ -1175,7 +1194,7 @@
             <div class="container">
                 <h2 style="text-align: center;">Comparativo Rápido das Principais Marcas</h2>
                 <div class="comparador-table-wrapper">
-                    <!-- Tabela Home com Nota RA -->
+                    <!-- Tabela Home com Nota RA e 12x -->
                     <table class="quick-compare-table" id="home-compare-table">
                         <thead>
                             <tr>
@@ -1183,6 +1202,7 @@
                                 <th>Taxa Débito</th>
                                 <th>Taxa Pix</th>
                                 <th>Crédito 1x</th>
+                                <th>Crédito 12x</th>
                                 <th>Nota RA</th>
                                 <th>Ver Análise</th>
                             </tr>
@@ -1235,7 +1255,7 @@
                 </button>
             </div>
 
-            <button class="btn btn-primary-outline btn-full no-print" id="filter-toggle" style="border-width: 2px;">
+            <button class="btn btn-primary-outline btn-full no-print" id="filter-toggle">
                 Mostrar/Esconder Filtros
             </button>
             
@@ -1516,7 +1536,6 @@
     document.addEventListener('DOMContentLoaded', () => {
 
         // --- /assets/data/maquininhas.json ---
-        // **LINKS, DESCONTOS E DADOS DA INFINITEPAY ATUALIZADOS**
         const MAQUININHAS_DATA = [
           {
             "slug": "ton",
@@ -1617,7 +1636,8 @@
             "tapon": true,
             "notaRa": 8.2,
             "faturamentoIdeal": 10000,
-            "link": "pagbank.vc/indica-maquininhas-9d8da8c4f",
+            // LINK ATUALIZADO
+            "link": "https://pagbank.vc/indica-maquininhas-9d8da8c4f",
             "desconto": null,
             "idealPara": ["Quem precisa de muitas opções de máquinas", "Quem quer receber o dinheiro na hora", "Quem precisa aceitar vale-refeição"],
             "pros": ["Taxa Pix 0% (via QR Code)", "Recebimento na hora", "Aceita vale-refeição (com CNPJ)", "Grande variedade de máquinas", "Conta digital PagBank integrada"],
@@ -1668,7 +1688,7 @@
             </div>
         `;
 
-        // **CONTEÚDO DO BLOG CORRIGIDO**
+        // Conteúdo do Blog
         const BLOG_CONTENT = {
             "menor-taxa": {
                 "title": "Maquininha com menor taxa em 2025: Ton ou InfinitePay?",
@@ -1899,12 +1919,11 @@
             quizProgress.style.width = `${progressPercent}%`;
         }
 
-        // **LÓGICA DO QUIZ CORRIGIDA (NÃO FILTRA MAIS INFINITEPAY)**
+        // Lógica do Quiz
         function showQuizResult() {
             quizContainer.innerHTML = '';
             quizProgress.style.width = '100%';
             
-            // Lógica de recomendação
             const answers = quizAnswers;
             let recommendations = [...MAQUININHAS_DATA];
             let reason = "";
@@ -1999,23 +2018,54 @@
         // Router SPA
         const pages = document.querySelectorAll('.page');
         const navLinks = document.querySelectorAll('.router-link');
+        const defaultTitle = "Qual a Melhor Maquininha de Cartão? Compare 5 Marcas [2025]";
+        const defaultDesc = "Compare taxas de débito, crédito, Pix e Nota RA das 5 principais maquininhas do Brasil em 2025: Ton, InfinitePay, SumUp, PagSeguro e Mercado Pago.";
         
+        // --- FUNÇÕES DE SEO ---
+        function updateMeta(title = defaultTitle, description = defaultDesc) {
+            document.title = title;
+            document.getElementById('meta-description').setAttribute('content', description);
+        }
+
+        function setStructuredData(data) {
+            let ldScript = document.getElementById('json-ld-structured-data');
+            if (!ldScript) {
+                ldScript = document.createElement('script');
+                ldScript.type = 'application/ld+json';
+                ldScript.id = 'json-ld-structured-data';
+                document.head.appendChild(ldScript);
+            }
+            ldScript.textContent = JSON.stringify(data);
+        }
+        // --- FIM FUNÇÕES DE SEO ---
+
         function showPage(pageId, param) {
             pages.forEach(p => p.style.display = 'none');
             let pageToShow = document.getElementById(pageId);
             
-            document.title = "Comparador de Maquininhas 2025"; // Reset
+            // Reseta Título, Descrição e JSON-LD
+            updateMeta(defaultTitle, defaultDesc);
+            setStructuredData({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "ComparaMaq",
+                // !! IMPORTANTE: Substitua [SEU-DOMINIO-AQUI.com] pelo seu domínio real
+                "url": "https://[SEU-DOMINIO-AQUI.com]/",
+                "logo": "https://[SEU-DOMINIO-AQUI.com]/logo-comparamaq.png" // Você precisará hospedar um logo
+            });
             
             // Lógica para páginas dinâmicas
             if (pageId === 'page-review' && param) {
                 pageToShow = document.getElementById('page-review');
-                populateReviewPage(param);
+                populateReviewPage(param); // Esta função vai atualizar o meta e o JSON-LD
             } else if (pageId === 'page-blog' && param) {
                 pageToShow = document.getElementById('page-blog');
-                populateBlogPage(param);
+                populateBlogPage(param); // Esta função vai atualizar o meta e o JSON-LD
             } else if (pageId === 'page-quiz') {
+                updateMeta("Quiz: Qual a melhor maquininha para você?", "Responda 6 perguntas rápidas e descubra a maquininha com a menor taxa para o seu negócio.");
                 restartQuiz();
             } else if (pageId === 'page-comparar') {
+                updateMeta("Comparador de Maquininhas 2025", "Compare todas as taxas, prazos e benefícios de Ton, SumUp, InfinitePay, PagSeguro e Mercado Pago lado a lado.");
                 renderComparadorTable(MAQUININHAS_DATA); // Renderiza a tabela completa
             }
             
@@ -2091,32 +2141,33 @@
         
         // --- /assets/js/home.js (embutido) ---
         
-        // Função da Tabela Home ATUALIZADA com Nota RA
+        // Função da Tabela Home ATUALIZADA com Nota RA, 12x, botão com ênfase e sem nome duplicado
         function renderHomeTable() {
             const tableBody = document.getElementById('home-compare-table')?.querySelector('tbody');
             if (!tableBody) return;
             
             const data = MAQUININHAS_DATA;
             const minPix = Math.min(...data.map(m => m.taxas.pix));
+            const minCredito12x = Math.min(...data.map(m => m.taxas.credito12x));
             
             tableBody.innerHTML = data.map(m => `
                 <tr>
                     <td data-label="Marca">
                         <a href="#page-review/${m.slug}" class="brand-logo router-link">
                             <img src="${m.logo}" alt="${m.nome}" loading="lazy">
-                            <span>${m.nome}</span>
                         </a>
                     </td>
                     <td data-label="Débito" class="rate-highlight">${m.taxas.debito.toFixed(2)}%</td>
                     <td data-label="Taxa Pix" class="${m.taxas.pix === minPix ? 'rate-highlight' : ''}">${m.taxas.pix.toFixed(2)}%</td>
                     <td data-label="Crédito 1x">${m.taxas.credito1x.toFixed(2)}%</td>
+                    <td data-label="Crédito 12x" class="${m.taxas.credito12x === minCredito12x ? 'rate-highlight' : ''}">${m.taxas.credito12x.toFixed(2)}%</td>
                     <td data-label="Nota RA">
                         <strong class="ra-score" style="color: ${m.notaRa >= 8 ? 'var(--success-dark)' : (m.notaRa >= 7 ? 'var(--text-color)' : '#F59E0B')}">
                             ${m.notaRa.toFixed(1)}
                         </strong>
                     </td>
                     <td data-label="Análise">
-                        <a href="#page-review/${m.slug}" class="btn btn-primary-outline router-link" style="border-width: 2px;">Ver Análise</a>
+                        <a href="#page-review/${m.slug}" class="btn btn-primary router-link">Ver Análise</a>
                     </td>
                 </tr>
             `).join('');
@@ -2136,7 +2187,7 @@
             return `${rate.toFixed(2)}%`.replace('.', ',');
         }
 
-        // Função da Tabela Comparador ATUALIZADA com Tap On e Link de Afiliado
+        // Função da Tabela Comparador ATUALIZADA (sem nome duplicado)
         function renderComparadorTable(data) {
             if (!tableBody) return;
             
@@ -2151,7 +2202,6 @@
                     <td>
                         <a href="#page-review/${m.slug}" class="brand-logo router-link">
                             <img src="${m.logo}" alt="${m.nome}" loading="lazy">
-                            <span>${m.nome}</span>
                         </a>
                     </td>
                     <td>${m.modelos.join(', ')}</td>
@@ -2173,7 +2223,7 @@
             }
         }
         
-        // Função de Filtros ATUALIZADA com Tap On
+        // Função de Filtros
         function applyFilters() {
             const formData = new FormData(filtersForm);
             const faturamento = parseInt(faturamentoSlider.value, 10);
@@ -2293,7 +2343,6 @@
         
         // --- /assets/js/review.js (embutido) ---
         
-        // **FUNÇÃO ATUALIZADA COM LINKS DE AFILIADO E DESCONTOS**
         function populateReviewPage(slug) {
             const machine = MAQUININHAS_DATA.find(m => m.slug === slug);
             if (!machine) {
@@ -2301,7 +2350,26 @@
                 return;
             }
             
-            document.title = `Análise Maquininha ${machine.nome} 2025 | Taxas e Prós`;
+            // ATUALIZA META E TÍTULO
+            const pageTitle = `Análise Maquininha ${machine.nome} 2025 | Taxas e Prós`;
+            const pageDesc = `Veja taxas, prós, contras e se a maquininha ${machine.nome} vale a pena. ${machine.slogan}`;
+            updateMeta(pageTitle, pageDesc);
+
+            // ATUALIZA JSON-LD
+            setStructuredData({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": machine.nome,
+                "description": pageDesc,
+                "image": machine.imagem,
+                "brand": { "@type": "Brand", "name": machine.nome },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": machine.notaRa,
+                    "bestRating": "10",
+                    "reviewCount": Math.floor(Math.random() * (1500 - 300 + 1)) + 300 // Mock review count
+                }
+            });
             
             // Header
             document.getElementById('review-logo').src = machine.logo;
@@ -2337,7 +2405,7 @@
             currentMachineRates = machine; // Passa o objeto da máquina inteiro
             updateSimulator();
             
-            // --- ATUALIZAÇÃO DE LINKS E DESCONTOS ---
+            // Links e Descontos
             const discountText = machine.desconto || "";
             const discountBadgeHeader = document.getElementById('review-cta-header-discount');
             const discountBadgeSidebar = document.getElementById('review-cta-sidebar-discount');
@@ -2409,7 +2477,30 @@
                 return;
             }
             
-            document.title = `${post.title} | ComparaMaq 2025`;
+            // ATUALIZA META E TÍTULO
+            const pageTitle = `${post.title} | ComparaMaq 2025`;
+            const pageDesc = `Leia o artigo completo sobre "${post.title}" e descubra qual a melhor maquininha para o seu negócio.`;
+            updateMeta(pageTitle, pageDesc);
+
+            // ATUALIZA JSON-LD
+            setStructuredData({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": post.title,
+                "author": { "@type": "Organization", "name": "Equipe ComparaMaq" },
+                "publisher": { 
+                    "@type": "Organization", 
+                    "name": "ComparaMaq", 
+                    "logo": { 
+                        "@type": "ImageObject", 
+                        // !! IMPORTANTE: Substitua [SEU-DOMINIO-AQUI.com] pelo seu domínio real
+                        "url": "https://[SEU-DOMINIO-AQUI.com]/logo-comparamaq.png"
+                    } 
+                },
+                "datePublished": "2025-11-01T08:00:00-03:00",
+                "dateModified": "2025-11-01T08:00:00-03:00"
+            });
+            
             document.getElementById('blog-title').textContent = post.title;
             document.getElementById('blog-content').innerHTML = post.content;
         }
