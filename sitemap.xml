@@ -3,19 +3,19 @@
     
     <!-- Páginas Principais -->
     <url>
-        <loc>https://comparamaq.vercel.app/</loc>
+        <loc>https://comparamaq.com.br/</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-comparar</loc>
+        <loc>https://comparamaq.com.br/#page-comparar</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-quiz</loc>
+        <loc>https://comparamaq.com.br/#page-quiz</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -23,31 +23,31 @@
     
     <!-- Análises de Maquininhas -->
     <url>
-        <loc>https://comparamaq.vercel.app/#page-review/ton</loc>
+        <loc>https://comparamaq.com.br/#page-review/ton</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-review/infinitepay</loc>
+        <loc>https://comparamaq.com.br/#page-review/infinitepay</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-review/sumup</loc>
+        <loc>https://comparamaq.com.br/#page-review/sumup</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-review/pagseguro</loc>
+        <loc>https://comparamaq.com.br/#page-review/pagseguro</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-review/mercadopago</loc>
+        <loc>https://comparamaq.com.br/#page-review/mercadopago</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -55,31 +55,31 @@
     
     <!-- Artigos do Blog -->
     <url>
-        <loc>https://comparamaq.vercel.app/#page-blog/menor-taxa</loc>
+        <loc>https://comparamaq.com.br/#page-blog/menor-taxa</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-blog/sem-aluguel</loc>
+        <loc>https://comparamaq.com.br/#page-blog/sem-aluguel</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-blog/recebimento-rapido</loc>
+        <loc>https://comparamaq.com.br/#page-blog/recebimento-rapido</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-blog/para-mei</loc>
+        <loc>https://comparamaq.com.br/#page-blog/para-mei</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://comparamaq.vercel.app/#page-blog/pagseguro-vs-mercadopago</loc>
+        <loc>https://comparamaq.com.br/#page-blog/pagseguro-vs-mercadopago</loc>
         <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
